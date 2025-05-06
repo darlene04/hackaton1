@@ -1,13 +1,10 @@
 package com.example.hackaton1.entities;
 
 import jakarta.persistence.*;
-import org.hibernate.mapping.List;
-
-import javax.management.relation.Role;
 import java.util.ArrayList;
+import java.util.List;
 
 @Entity
-
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
