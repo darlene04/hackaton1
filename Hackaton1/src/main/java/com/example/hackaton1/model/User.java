@@ -12,7 +12,7 @@ public class User {
     private Long id;
 
     @Column(unique = true, nullable = false)
-    private String usergname;
+    private String username;
 
     @Column(nullable = false)
     private String password;
@@ -20,8 +20,4 @@ public class User {
     @ElementCollection(fetch = FetchType.EAGER)
     @Enumerated(EnumType.STRING)
     private Set<Role> roles;
-
-    public enum Role {
-        ROLE_SPARKY_ADMIN, ROLE_COMPANY_ADMIN, ROLE_USER
-    }
 }
